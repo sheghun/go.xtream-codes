@@ -1,6 +1,6 @@
-module github.com/tellytv/go.xtream-codes
+module github.com/sheghun/go.xtream-codes
 
-go 1.17
+go 1.22.1
 
 require github.com/onsi/gomega v1.17.0
 

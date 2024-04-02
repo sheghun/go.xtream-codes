@@ -13,7 +13,7 @@ import (
 	"strconv"
 )
 
-var defaultUserAgent = "go.xstream-codes (Go-http-client/1.1)"
+var defaultUserAgent = "os/go.xstream-codes (Go-http-client/1.1)"
 
 // XtreamClient is the client used to communicate with a Xtream-Codes server.
 type XtreamClient struct {

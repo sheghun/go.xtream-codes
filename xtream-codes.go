@@ -7,6 +7,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log"
 	"net/http"
 	"net/url"
 	"strconv"
@@ -58,6 +59,8 @@ func NewClient(username, password, baseURL string) (*XtreamClient, error) {
 	}
 
 	a := &AuthenticationResponse{}
+
+	log.Println(string(authData))
 
 	if jsonErr := json.Unmarshal(authData, &a); jsonErr != nil {
 		return nil, fmt.Errorf("error unmarshaling json: %s", jsonErr.Error())
